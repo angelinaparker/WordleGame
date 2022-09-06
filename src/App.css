@@ -54,7 +54,6 @@ nav h1 {
   min-width: 80%;
   min-height: 50%;
   max-width: 90;
-  border: solid red;
   display: flex;
   flex-direction: column;
   padding-bottom: 12.5px;
@@ -110,7 +109,7 @@ nav h1 {
   /* flex-grow: 1;
   flex-shrink: 1; */
   margin-top: 25px;
-  border: solid red;
+ 
   padding-bottom: 50px;
 }
 
@@ -152,7 +151,6 @@ nav h1 {
   flex: 33%; */
   flex-direction: row;
   margin: 5px;
-  border: solid #707070;
 }
 
 .key {
