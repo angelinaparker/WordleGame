@@ -38,9 +38,12 @@ nav h1 {
   height: calc(100vh - 170px);
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  padding-top: 10px;
   padding-bottom: 100px;
   flex-direction: column;
+ 
 }
 
 .board {
@@ -50,13 +53,13 @@ nav h1 {
   align-content: center;
   flex-grow: 1;
   flex-shrink: 1;
- 
+  margin-top: 0;
   min-width: 80%;
   min-height: 50%;
   max-width: 90;
   display: flex;
   flex-direction: column;
-  padding-bottom: 12.5px;
+  padding-bottom: 75px;
   
 }
 
@@ -67,6 +70,7 @@ nav h1 {
   flex-direction: row;
   justify-content: center;
   margin: 5px;
+  
 }
 
 .letter {
@@ -82,6 +86,7 @@ nav h1 {
   font-weight: bolder;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 #correct {
@@ -97,9 +102,9 @@ nav h1 {
 }
 
 .keyboard {
-  
+  /* align-self; */
   max-height: 40%;
-  max-width: 90%;
+  max-width: 100%;
   flex-direction: column;
   display: flex;
   border: none;
@@ -109,8 +114,9 @@ nav h1 {
   /* flex-grow: 1;
   flex-shrink: 1; */
   margin-top: 25px;
- 
-  padding-bottom: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
 }
 
 .line1 {
@@ -125,7 +131,7 @@ nav h1 {
   flex-shrink: 1;
   flex: 33%;*/
   flex-direction: row; 
-  margin: 5px;
+  margin: 2px;
 }
 .line2 {
   flex-wrap: nowrap;
@@ -138,7 +144,7 @@ nav h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5px;
+  margin: 2px;
 }
 .line3 {
   flex-wrap: nowrap;
@@ -150,7 +156,7 @@ nav h1 {
   flex-shrink: 1;
   flex: 33%; */
   flex-direction: row;
-  margin: 5px;
+  margin: 2px;
 }
 
 .key {
