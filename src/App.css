@@ -99,7 +99,7 @@ nav h1 {
 .keyboard {
   
   max-height: 40%;
-  max-width: 80%;
+  max-width: 100%;
   display: flex;
   border: none;
   flex-wrap: wrap;
