@@ -54,7 +54,7 @@ nav h1 {
   min-width: 80%;
   min-height: 50%;
   max-width: 90;
-
+  border: solid red;
   display: flex;
   flex-direction: column;
   padding-bottom: 12.5px;
@@ -63,6 +63,7 @@ nav h1 {
 
 .row {
   flex: 50%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -99,58 +100,59 @@ nav h1 {
 .keyboard {
   
   max-height: 40%;
-  max-width: 100%;
+  max-width: 90%;
+  flex-direction: column;
   display: flex;
   border: none;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-top: 60px;
-
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+  margin-top: 25px;
+  border: solid red;
   padding-bottom: 50px;
 }
 
 .line1 {
   max-width: 100%;
+  align-items: center;
   display: flex;
   border: none;
   justify-content: space-evenly;
-  flex-grow: 1;
+  
+  flex-wrap: nowrap;
+  /* flex-grow: 1;
   flex-shrink: 1;
-  flex: 33%;
-  display: flex;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
+  flex: 33%;*/
+  flex-direction: row; 
   margin: 5px;
 }
 .line2 {
+  flex-wrap: nowrap;
   max-width: 100%;
   display: flex;
   border: none;
-  justify-content: space-evenly;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex: 33%;
+  /* flex-grow: 1;
+  flex-shrink: 1;*/
+  flex: 33%; 
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 5px;
 }
 .line3 {
+  flex-wrap: nowrap;
   max-width: 100%;
-  
   display: flex;
   border: none;
   justify-content: space-evenly;
-  flex-grow: 1;
+  /* flex-grow: 1;
   flex-shrink: 1;
-  flex: 33%;
-  display: flex;
+  flex: 33%; */
   flex-direction: row;
-  justify-content: center;
   margin: 5px;
+  border: solid #707070;
 }
 
 .key {

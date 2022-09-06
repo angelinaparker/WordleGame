@@ -5,7 +5,7 @@ import Key from './Key';
 function Keyboard() {
   const { onEnter, onDelete, onSelectLetter, disabledLetters } = useContext(AppContext);
 
-  const keys1 = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
+  const keys1 = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P" ];
   const keys2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
 
@@ -19,7 +19,7 @@ function Keyboard() {
         if (event.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetter(key);
         }
-      });
+      }); 
       keys2.forEach((key) => {
         if (event.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetter(key);
@@ -46,13 +46,14 @@ function Keyboard() {
       <div className="line1">
         {keys1.map((key) => {
           return <Key keyVal={key} disabled = {disabledLetters.includes(key)} />;
-        })}
-      </div> <br></br>
+        })}  
+      </div> 
+      
       <div className="line2">
         {keys2.map((key) => {
           return <Key keyVal={key} disabled = {disabledLetters.includes(key)} />;
         })}
-      </div> <br></br>
+      </div> 
       <div className="line3">
         <Key keyVal={"ENTER"} bigKey />
         {keys3.map((key) => {
