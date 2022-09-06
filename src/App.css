@@ -140,6 +140,7 @@ nav h1 {
 }
 .line3 {
   max-width: 100%;
+  
   display: flex;
   border: none;
   justify-content: space-evenly;
@@ -170,5 +171,5 @@ nav h1 {
   width: 100px;
 }
 #disabled {
-  background-color: #525253;
+  background-color: #707070;
 }
