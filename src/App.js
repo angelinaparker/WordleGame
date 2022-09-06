@@ -4,6 +4,7 @@ import Board from "./components/Board";
 import { createContext, useEffect, useState } from "react";
 import { boardDefault, generateWordSet } from "./Words";
 import GameOver from "./components/GameOver";
+import {  Typography } from "@mui/material";
 
 
 export const AppContext = createContext();
@@ -76,11 +77,49 @@ function App() {
     }
   };
 
+
   return (
     <div className="App">
+  
       <nav>
-        <h1>Wordle by Angelina</h1> 
+      <Typography
+        variant="h4"
+        noWrap
+        component="a"
+        href="/"
+        sx={{
+          m: 2,
+          display: { xs: "none", md: "flex" },
+          letterSpacing: ".3rem",
+          color: "inherit",
+          textDecoration: "none",
+        }}
+      >
+        WORDLE by Angelina
+      </Typography>
+      <Typography
+        variant="body1"
+        noWrap
+        component="a"
+        href=""
+        sx={{
+          m: 2,
+          display: { xs: "flex", md: "none" },
+          fontSize: 27,
+          fontWeight: 800,
+          letterSpacing: ".1rem",
+          color: "inherit",
+          textDecoration: "none",
+        }}
+      >
+        WORDLE by Angelina
+      </Typography>
       </nav>
+
+
+
+
+      
       <AppContext.Provider
         value={{
           board,
