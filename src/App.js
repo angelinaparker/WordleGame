@@ -4,7 +4,7 @@ import Board from "./components/Board";
 import { createContext, useEffect, useState } from "react";
 import { boardDefault, generateWordSet } from "./Words";
 import GameOver from "./components/GameOver";
-import { useContext } from "react";
+
 
 export const AppContext = createContext();
 
